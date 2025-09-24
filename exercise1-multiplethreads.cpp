@@ -22,7 +22,5 @@ int main() {
     thread t(sayHello);                  // Start a new thread that runs sayHello()
     cout << "Main thread finished.\n";   // Print message from the main thread
     // Note: The program may exit before the new thread prints its message.
-    // To ensure the new thread finishes, add: t.join();
-	//t.join(); // Wait for the new thread to finish
-	t.join(); // Wait for the new thread to finish
+
 }
